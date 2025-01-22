@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface MessageInputProps {
   value: string;
@@ -9,7 +9,7 @@ interface MessageInputProps {
 export const MessageInput: React.FC<MessageInputProps> = ({
   value,
   onChange,
-  onSend
+  onSend,
 }) => {
   return (
     <div className="flex gap-2">
@@ -17,7 +17,7 @@ export const MessageInput: React.FC<MessageInputProps> = ({
         type="text"
         value={value}
         onChange={onChange}
-        onKeyPress={(e) => e.key === 'Enter' && onSend()}
+        onKeyPress={(e) => e.key === "Enter" && onSend()}
         placeholder="พิมพ์ข้อความ..."
         className="flex-1 rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
       />

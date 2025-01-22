@@ -45,9 +45,9 @@ export const useChat = () => {
           sender: 'bot'
         };
         setMessages(prevMessages => [...prevMessages, botMessage]);
-      }, 1000);
+      }, 500);
       
-      setNewMessage('');
+      setNewMessage(''); //ข้อความหลังกดส่ง
     }
   }, [newMessage]);
 

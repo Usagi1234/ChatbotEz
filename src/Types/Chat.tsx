@@ -1,5 +1,5 @@
 export interface Message {
-    id: number;
-    text: string;
-    sender: 'user' | 'bot';
+    id: number; //Id ข้อความ
+    text: string; //ตัวข้อความ
+    sender: 'user' | 'bot'; //ใครเป็นคนส่ง
   }
